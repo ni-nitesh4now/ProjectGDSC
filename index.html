@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nitesh Mishra</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home">Nitesh<span>Mishra</span></a>
+      </div>
+      <div class="lis" id="lis">
+        <a class="menu active" href="#home">Home</a>
+        <a class="menu" href="#hobbies">Hobbies</a>
+        <a class="menu" href="#skills">Skills</a>
+      </div>
+    </nav>
+    <section class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="column left">
+            <div class="text-1">I am</div>
+            <div class="text-2">Nitesh Mishra</div>
+            <div class="text-3">Student of NSUT,Delhi.</br>I am a Web Developer and a Freelancer.</div>
+            <a href="#hobbies">My Hobbies</a>
+            <a href="#skills">Skills</a>
+          </div>
+          <div class="column right">
+            <img src="/src/Image.jpg" alt="" />
+          </div>
+          <div class="column right"></div>
+        </div>
+      </div>
+    </section>
+    <!--hobbies section start-->
+    <section class="hobbies" id="hobbies">
+      <div class="max-width">
+        <h2 class="title">My Hobbies</h2>
+        <div class="card-container">
+            <div class="card">
+              <img src="/src/code.png" alt="" />
+                <div class="text-4">Coading</div>
+            </div>
+            <div class="card">
+              <img src="/src/poetry.jpg" alt="" />
+                <div class="text-4">Writing</div>
+            </div>
+            <div class="card">
+              <img src="/src/paint.jpg" alt="" />
+                <div class="text-4">Painting</div>
+            </div>
+            <div class="card">
+              <img src="/src/gardening.jpg" alt="" />
+                <div class="text-4">Gardening</div>
+            </div>
+            <div class="card">
+              <img src="/src/music.jpg" alt="" />
+                <div class="text-4">Music</div>
+            </div>
+        </div>
+      </div>
+  </section>
+    <!-- skills section start-->
+    <section class="skills" id="skills">
+      <div class="max-width">
+        <h2 class="title">My Skills</h2>
+        <div class="skills-content">
+            <div class="skill">
+                <div class="text-4">HTML</div>
+                <div class="bar"><div class="progress html"><span class="percent">95%</span></div></div>
+            </div>
+            <div class="skill">
+                <div class="text-4">CSS</div>
+                <div class="bar"><div class="progress css"><span class="percent">90%</span></div></div>
+            </div>
+            <div class="skill">
+                <div class="text-4">JavaScript</div>
+                <div class="bar"><div class="progress js"><span class="percent">80%</span></div></div>
+            </div>
+            <div class="skill">
+                <div class="text-4">C++</div>
+                <div class="bar"><div class="progress cpp"><span class="percent">85%</span></div></div>
+            </div>
+            <div class="skill">
+                <div class="text-4">React Js</div>
+                <div class="bar"><div class="progress react"><span class="percent">45%</span></div></div>
+            </div>
+            <div class="skill">
+                <div class="text-4">Python</div>
+                <div class="bar"><div class="progress py"><span class="percent">20%</span></div></div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+      var header = document.getElementById("lis");
+var btns = header.getElementsByClassName("menu ");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+  </script>
+</html>
